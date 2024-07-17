@@ -16,7 +16,7 @@ function Navbar() {
               <a className="nav-link active" aria-current="page" href="#" style={{background:'#98FB98',borderRadius:'50px'}}>Portfolio</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">About</a>
+              <a className="nav-link" href="#about">About</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">Contact</a>
