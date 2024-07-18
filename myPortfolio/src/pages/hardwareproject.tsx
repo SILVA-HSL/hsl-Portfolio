@@ -10,7 +10,7 @@ const HardwareProject = () => {
       <div className="row">
         <div className="col-12 col-lg-6 col-md-12">
           <h1>Hardware Project</h1>
-          <p id="my-top-skills">Automated Batik Wax Painting Machine</p>
+          <p id="my-top-skills">Automated Batik Wax Printing Machine</p>
           <p>
           In this project, we developed a batik wax printing machine. That is
 used to draw the batik pattern by using batik wax. Any art can be
@@ -21,7 +21,7 @@ human involvement in the drawing phase.
           </p>
         </div>
         <div className="col-12 col-lg-6 col-md-12 ">
-          <video width="100%" height="100%" controls style={{borderRadius:"30px"}}>
+          <video width="100%" height="100%" controls  style={{borderRadius:"30px"}}>
             <source src={project_video} type="video/mp4" />
           </video>
         

@@ -1,147 +1,3 @@
-// import React, { useEffect, useRef } from "react";
-// import "./home.css";
-// import Navbar from "../components/navbar";
-// import shanuka from "../pages/my pic.jpg";
-// import react from "../pages/react.png";
-// import NETcore from "../pages/NET core.png";
-// import bootstrap from "../pages/bootstrap.png";
-// import typescript from "../pages/TypeScript.png";
-// import html from "../pages/html.png";
-// import css from "../pages/CSS3.png";
-// import figma from "../pages/figma.png";
-// import java from "../pages/java.png";
-// import c from "../pages/C.png";
-
-// function Home() {
-//   const sectionsRef = useRef([]);
-
-//   useEffect(() => {
-//     const sections = sectionsRef.current;
-//     const observer = new IntersectionObserver(
-//       (entries) => {
-//         entries.forEach((entry) => {
-//           if (entry.isIntersecting) {
-//             entry.target.classList.add("visible");
-//             observer.unobserve(entry.target);
-//           }
-//         });
-//       },
-//       { threshold: 0.1 }
-//     );
-
-//     sections.forEach((section) => {
-//       observer.observe(section);
-//     });
-
-//     return () => {
-//       sections.forEach((section) => observer.unobserve(section));
-//     };
-//   }, []);
-
-//   return (
-//     <div>
-//       <div className="mt-0 fixed-top">
-//         <Navbar />
-//       </div>
-
-//       <div className="container-fluid d-flex justify-content-center align-items-center home-container container-spacing">
-//         <div className="row justify-content-center home-content">
-
-//           <div className="col-12 col-md-8 col-lg-4 col-xl-4 col-xxl-4 order-1 order-md-1 m-auto home-text">
-//             <div className="home-inner " >
-//               <h1 className="text-center fade-in first"><i>Hello, I'm Shanuka</i></h1><br/>
-//               <h2 className="text-center fade-in second">Second year undergraduate @ <em style={{color:"#BE7B72"}}>University of Moratuwa</em></h2><br/>
-//               <p className="text-center fade-in third">I am passionate about innovation and technology, and I develop long-term solutions to boost output while preserving the environment and the welfare of people. </p>
-//             </div>
-//           </div>
-//           <div className="col-12 col-md-8 col-lg-4 col-xl-4 col-xxl-4 order-2 order-md-2 m-auto home-image ">
-//             <img src={shanuka} alt="Shanuka" className="img-fluid fade-in fourth rounded" />
-//           </div>
-//         </div>
-//         </div>
-
-//          <div id="about" className="container-fluid about-section container-spacing">
-//         <div className="row justify-content-center home-content">
-//           <div className="col-8">
-//             <h2 className="skills-title">Skills
-//               <br/>
-//               <p id="my-top-skills">My Top Skills</p>
-
-//             </h2>
-//             <div className="row">
-//               <div className="col-12 col-md-6 col-lg-4 col-sm-12">
-//                 <div className="skill-card">
-//                   <img src={react} alt="react" />
-//                 <h4>ReactJs</h4>
-//                   <p>Javascript library for UI</p>
-//                 </div>
-//               </div>
-//               <div className="col-12 col-md-6 col-lg-4 col-sm-12">
-//                 <div className="skill-card ">
-//                   <img src={NETcore} alt="aspnet" />
-//                   <h4>Asp.Net Core</h4>
-//                   <p>Versatile framework for building high-performance web applications</p>
-//                 </div>
-//               </div>
-//               <div className="col-12 col-md-6 col-lg-4 col-sm-12">
-//                 <div className="skill-card">
-//                   <img src={bootstrap} alt="bootstrap" />
-//                   <h4>Bootstrap</h4>
-//                   <p>Front-end framework for building responsive web pages</p>
-//                 </div>
-//               </div>
-//               <div className="col-12 col-md-6 col-lg-4 col-sm-12">
-//                 <div className="skill-card">
-//                   <img src={typescript} alt="typescript" />
-//                   <h4>TypeScript</h4>
-//                   <p>Dynamic scripting language for web</p>
-//                 </div>
-//               </div>
-//               <div className="col-12 col-md-6 col-lg-4 col-sm-12">
-//                 <div className="skill-card ">
-//                   <img src={html} alt="html" />
-//                   <h4>HTML</h4>
-//                   <p>Markup language for web development</p>
-//                 </div>
-//               </div>
-//               <div className="col-12 col-md-6 col-lg-4 col-sm-12">
-//                 <div className="skill-card ">
-//                   <img src={css} alt="css" />
-//                   <h4>CSS</h4>
-//                   <p>Styling for web pages</p>
-//                 </div>
-//               </div>
-//               <div className="col-12 col-md-6 col-lg-4 col-sm-12">
-//                 <div className="skill-card ">
-//                   <img src={figma} alt="figma" />
-//                   <h4>Figma</h4>
-//                   <p>Collaborative design and prototyping</p>
-//                 </div>
-//               </div>
-//               <div className="col-12 col-md-6 col-lg-4 col-sm-12">
-//                 <div className="skill-card ">
-//                   <img src={java} alt="java" />
-//                   <h4>Java</h4>
-//                   <p>Widely-used versatile programming language</p>
-//                 </div>
-//               </div>
-//               <div className="col-12 col-md-6 col-lg-4 col-sm-12">
-//                 <div className="skill-card ">
-//                   <img src={c} alt="c" />
-//                   <h4>C</h4>
-//                   <p>Efficient and versatile programming</p>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Home;
-
 import React, { useEffect, useRef, useState } from "react";
 import "./home.css";
 import Navbar from "../components/navbar";
@@ -159,8 +15,13 @@ import unipic from "../pages/unipic.jpg";
 import sclpic from "../pages/sclpic.jpg";
 import SoftwareProject from "./softwareproject";
 import HardwareProject from "./hardwareproject";
-
-
+import shanukapdf from "../pages/shanuka cv final.pdf";
+import My from "../pages/my.jpg";
+import ContactForm from "./contactform";
+import linkedin from "../pages/linkedin.png";
+import github from "../pages/git.png";
+import call from "../pages/call.png";
+import email from "../pages/email.png";
 
 
 function Home() {
@@ -184,6 +45,7 @@ function Home() {
 
     const skillCards = document.querySelectorAll(".skill-card");
     const eduCards = document.querySelectorAll(".edu-card");
+    const projectSelector = document.querySelectorAll(".project-selector");
     skillCards.forEach((card) => {
       observer.observe(card);
     });
@@ -195,6 +57,7 @@ function Home() {
     return () => {
       skillCards.forEach((card) => observer.unobserve(card));
       eduCards.forEach((card) => observer.unobserve(card));
+      projectSelector.forEach((card) => observer.unobserve(card));
     };
   }, []);
 
@@ -230,6 +93,7 @@ function Home() {
               src={shanuka}
               alt="Shanuka"
               className="img-fluid fade-in fourth rounded"
+             
             />
           </div>
         </div>
@@ -326,7 +190,7 @@ function Home() {
             <div className="col-8 ">
               <h2 className="skills-title">Education</h2>
               <div className="row">
-                <div className="row col-12 edu-card visible">
+                <div className="row col-12 edu-card visible animate-from-left">
                   <div
                     className="col-6 col-lg-6 col-md-12 "
                     style={{ padding: "2%", textAlign: "center" }}
@@ -355,7 +219,7 @@ function Home() {
                 <br />
                 <br />
                 <br />
-                <div className="row col-12 edu-card visible">
+                <div className="row col-12 edu-card visible animate-from-right">
                   <div className="col-6 col-lg-6 col-md-12 ">
                     <img
                       src={sclpic}
@@ -387,24 +251,104 @@ function Home() {
           </div>
 
           <div
-            className="row justify-content-center project-selector "
+            className="row justify-content-center project-selector visible animate-from-right "
             style={{ marginTop: "50px" }}
           >
             <div className="col-8 ">
               <h2 className="skills-title">Projects</h2>
+              <p id="my-top-skills">Projects I've Completed</p>
               <div>
               
           </div>
-          <input type="radio" name="project" id="project1" checked={projects === "project1"} onChange={() => setProjects("project1")} />
-          <input type="radio" name="project" id="project2" checked={projects === "project2"} onChange={() => setProjects("project2")} />
+          <input type="radio" name="project" checked={projects === "project1"} onChange={() => setProjects("project1")}  />&nbsp;&nbsp;
+
+          
+          <input type="radio" name="project" checked={projects === "project2"} onChange={() => setProjects("project2")}  />
+          
 
           {projects === "project1" ?<SoftwareProject /> : null}
           {projects === "project2" ? <HardwareProject /> : null}
 
             </div>
           </div>
+
+          <div
+            className="row justify-content-center project-selector visible animate-from-right "
+            style={{ marginTop: "100px" }}
+          >
+            <div className="col-8">
+              <h2 className="skills-title">Resume</h2>
+              <p id="my-top-skills">Career Overview</p>
+              <div className="resume col-lg-12 col-sm-12 col-md-12 "><em className="find-my"> Find my resume &#10140;</em> &nbsp;&nbsp;
+        <a href={shanukapdf} download className="btn" id="btn-download">
+          Download CV
+        </a>
+      </div>
+            </div>
+          </div>
+
+          <div
+            className="row justify-content-center getting-know visible animate-from-right"
+            style={{ marginTop: "100px" }}
+          >
+            <div className="col-12">
+             
+              <p id="my-top-skills" style={{fontSize:"3em",paddingTop:'10px',color:'#074173'}}>Getting to Know Me</p>
+
+              <div className="row visible animate-from-right">
+                <div className="col-lg-4 col-md-12 col-sm-12 visible animate-from-bottom" style={{textAlign:'end'}}>
+                  <img src={My} alt="shanuka" />
+
+                </div>
+                <div className="col-lg-4 col-md-6 col-sm-12 about visible animate-from-right">
+                Hi, I am Shanuka Lakshan, a dedicated and motivated undergraduate with a strong passion for the IT industry. With a solid academic foundation and a drive for continuous learning, I am eager to contribute my skills and knowledge to a dynamic work environment. I possess effective communication skills and experience in collaborative projects. I am excited about the opportunity to work as a software engineer intern, where I can further develop my technical expertise and gain valuable hands-on experience in the field. Additionally, I am enthusiastic about embracing new challenges and advancing innovative solutions to real-world problems.
+
+
+                </div>
+
+              </div>
+              
+            </div>
+          </div>
+          <div
+            className="row justify-content-center contact" id="contact"
+            style={{ marginTop: "1px" }}
+          >
+             <div className="col-12 col-lg-4 col-md-12 visible animate-from-left">
+             
+             <p id="my-top-skills" style={{fontSize:"3em",paddingTop:'10px',color:'#074173'}}>Contact Me</p>
+
+            <ContactForm/>
+
+</div>
+<div className="col-12 col-lg-6 col-md-12 visible animate-form-right">
+  <ul className="contact-item">
+    <li><img src={email} alt="icons"/>     &nbsp;shanuka70710880@gmail.com</li>
+    <li><img src={call} alt="icons" /> +94 76 900 4922</li>
+    <li><img src={linkedin} alt="icons"/><a href="https://linkedin.com/in/shanuka-lakshan-53478a218" target="_blank">shanuka Lakshan</a></li>
+    <li><img src={github} alt="icons"/><a href="https://github.com/SILVA-HSL" target="_blank">HSL-SILVA</a></li>
+  </ul>
+
+</div>
+          </div>
+
+
         </div>
       </div>
+      <footer >
+        <div className="container-fluid mt-0">
+          <div className="row">
+            <div className="col-12">
+              <center>
+                
+                  © 2021 Shanuka Lakshan | All rights reserved.
+                  
+              </center>
+            </div>
+            
+              </div>
+            </div>    
+      </footer>
     </div>
   );
 }
