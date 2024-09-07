@@ -92,7 +92,8 @@ function Home() {
             <img
               src={shanuka}
               alt="Shanuka"
-              className="img-fluid fade-in fourth rounded"
+              className="img-fluid fade-in fourth "
+              style={{ borderRadius: '50px' }}
              
             />
           </div>
@@ -192,7 +193,7 @@ function Home() {
               <div className="row">
                 <div className="row col-12 edu-card visible animate-from-left">
                   <div
-                    className="col-6 col-lg-6 col-md-12 "
+                    className="col-12 col-lg-6 col-md-12 "
                     style={{ padding: "2%", textAlign: "center" }}
                   >
                     <h4>University of Moratuwa</h4>
@@ -208,7 +209,7 @@ function Home() {
                       ,Sri Lanka
                     </p>
                   </div>
-                  <div className="col-6 col-lg-6 col-md-12 ">
+                  <div className="col-12 col-lg-6 col-md-12 ">
                     <img
                       src={unipic}
                       alt="unipic"
@@ -220,7 +221,7 @@ function Home() {
                 <br />
                 <br />
                 <div className="row col-12 edu-card visible animate-from-right">
-                  <div className="col-6 col-lg-6 col-md-12 ">
+                  <div className="col-12 col-lg-6 col-md-12 ">
                     <img
                       src={sclpic}
                       alt="sclpic"
@@ -228,7 +229,7 @@ function Home() {
                     />
                   </div>
                   <div
-                    className="col-6 col-lg-6 col-md-12 "
+                    className="col-12 col-lg-6 col-md-12 "
                     style={{ padding: "2%", textAlign: "center" }}
                   >
                     <h4>Lumbini College</h4>

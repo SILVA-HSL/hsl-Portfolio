@@ -1,4 +1,4 @@
-.navbar{
+/* .navbar{
     font-family: system-ui;
     font-size: large;
 
@@ -19,4 +19,41 @@
 .navbar-brand {
     font-size: x-large;
     color: #321f04be;
-}
+} */
+
+/* navbar.css */
+
+.navbar-brand {
+    font-size: 1.3em;
+  }
+  
+  .nav-link {
+    font-size: 1em;
+  }
+  
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .navbar-brand {
+      font-size: 1.1em;
+    }
+  
+    .nav-link {
+      font-size: 0.9em;
+    }
+  
+    .nav-item {
+      text-align: center; /* Ensure proper alignment on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar-brand {
+      font-size: 1em;
+    }
+  
+    .nav-link {
+      font-size: 0.8em;
+    }
+  }
+  
