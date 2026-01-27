@@ -1,5 +1,19 @@
-.hardware{
-    background-color:#884a392d;
+.hardware {
+    background: linear-gradient(145deg, #fff5f5, #ffe6e6);
     border-radius: 30px;
-    padding: 20px;
+    padding: 3rem;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    border: 2px solid #ffd6d6;
+}
+
+.hardware:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(136, 74, 57, 0.2);
+}
+
+@media (max-width: 768px) {
+    .hardware {
+        padding: 2rem 1.5rem;
+    }
 }

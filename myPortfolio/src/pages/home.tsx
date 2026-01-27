@@ -68,7 +68,7 @@ function Home() {
         <Navbar />
       </div>
 
-      <div className="container-fluid d-flex justify-content-center align-items-center home-container container-spacing">
+      <div id="home" className="container-fluid d-flex justify-content-center align-items-center home-container container-spacing">
         <div className="row justify-content-center home-content">
           <div className="col-12 col-md-8 col-lg-4 col-xl-4 col-xxl-4 order-1 order-md-1 m-auto home-text">
             <div className="home-inner">
