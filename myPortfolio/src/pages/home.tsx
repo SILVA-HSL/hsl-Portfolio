@@ -73,7 +73,7 @@ function Home() {
           <div className="col-12 col-md-8 col-lg-4 col-xl-4 col-xxl-4 order-1 order-md-1 m-auto home-text">
             <div className="home-inner">
               <h1 className="text-center fade-in first">
-                <i>Hello, I'm Shanuka</i>
+                <i>Hello, I'm Shanuka lakshan</i>
               </h1>
               <br />
               <h2 className="text-center fade-in second">
