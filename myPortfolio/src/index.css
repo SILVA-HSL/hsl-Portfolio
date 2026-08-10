@@ -66,3 +66,21 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+/* Base styles for all devices */
+body {
+  font-size: 16px;
+}
+
+/* Styles for devices with a width of 600px or less */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Styles for devices with a width of 400px or less */
+@media (max-width: 400px) {
+  body {
+    font-size: 12px;
+  }
+}
